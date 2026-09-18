@@ -11,7 +11,7 @@
 ## โครงสร้าง
 ไฟล์ทั้งหมดวางอยู่ที่ root ระดับเดียวกัน (index.html อ้างถึงไฟล์ด้วยชื่อไฟล์ตรง ๆ ไม่มีโฟลเดอร์ย่อย)
 - `index.html` — หน้าเว็บทั้งหมด (CSS/JS อยู่ในไฟล์เดียว ใช้ฟอนต์ Sarabun จาก Google Fonts)
-- `info-1.png` – `info-5.png` — ภาพแจ้งครู 5 ภาพ (ฉบับย่อ)
+- `info-1.png` – `info-6.png` — ภาพแจ้งครู 6 ภาพ (ฉบับย่อ)
 - `guide-*.jpg`, `sample-*.jpg`, `poster-*.jpg`, `readme-sample.jpg`, `msg-image.jpg`, `logo.png` — ภาพคู่มือและตัวอย่างเอกสาร
 - `video-print-pp5.mp4`, `video-download-form.mp4` — วิดีโอสาธิต
 - `form-ror-1-2569.xlsx` — แบบขออนุมัติผลการเรียน ร 1-2569
