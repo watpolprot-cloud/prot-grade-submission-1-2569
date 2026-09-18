@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ส่งเอกสารผลการเรียน “ร” ภาคเรียนที่ 1/2569 · โรงเรียนพรตพิทยพยัต</title>
 <meta name="description" content="คู่มือกระบวนการส่งแบบขออนุมัติผลการเรียน ร ปพ.5 และร่องรอยคะแนน ภาคเรียนที่ 1 ปีการศึกษา 2569 กลุ่มงานวัดผลและประเมินผล โรงเรียนพรตพิทยพยัต">
-<link rel="icon" href="assets/logo.png">
+<link rel="icon" href="logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
@@ -16,7 +16,7 @@
   --radius:16px; --shadow:0 6px 24px rgba(20,35,75,.08);
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:84px}
+html{scroll-behavior:smooth;scroll-padding-top:92px}
 body{font-family:'Sarabun',system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:17px}
 a{color:var(--navy2)}
 img{max-width:100%;display:block}
@@ -50,14 +50,17 @@ h2{font-size:clamp(26px,3.2vw,34px);font-weight:800;margin-bottom:10px}
 /* progress + nav */
 #progress{position:fixed;top:0;left:0;height:4px;background:var(--gold);width:0;z-index:60}
 header.top{position:sticky;top:0;z-index:50;background:rgba(20,35,75,.96);backdrop-filter:blur(8px);color:#fff}
-header.top .wrap{display:flex;align-items:center;gap:16px;height:64px}
-header.top img{width:36px}
-header.top .brand{font-weight:700;font-size:15px;line-height:1.2}
-header.top .brand span{display:block;font-weight:500;font-size:12.5px;color:#c9d1e3}
-@media(max-width:640px){header.top .brand span{display:none}header.top .brand{font-size:13.5px;white-space:nowrap}}
-nav.menu{margin-left:auto;display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+header.top .wrap{display:flex;align-items:center;gap:14px;height:64px;max-width:1280px}
+header.top img{width:36px;flex:none}
+header.top .brand{flex:none;min-width:0;font-weight:700;font-size:15px;line-height:1.2;white-space:nowrap}
+header.top .brand span{display:block;font-weight:500;font-size:12.5px;color:#c9d1e3;white-space:nowrap}
+nav.menu{margin-left:auto;display:flex;flex:0 1 auto;min-width:0;gap:2px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
 nav.menu::-webkit-scrollbar{display:none}
-nav.menu a{color:#e6eaf3;text-decoration:none;font-size:14.5px;font-weight:600;padding:8px 11px;border-radius:9px;white-space:nowrap}
+nav.menu a{color:#e6eaf3;text-decoration:none;font-size:13.5px;font-weight:600;padding:7px 9px;border-radius:9px;white-space:nowrap;flex:none}
+@media(max-width:1250px){header.top .brand span{display:none}}
+@media(max-width:1150px){nav.menu a.opt{display:none}}
+@media(max-width:950px){header.top .brand{font-size:13.5px}nav.menu a.opt2{display:none}}
+@media(max-width:560px){header.top .brand{font-size:0;overflow:hidden}header.top .brand::after{content:'ส่งเอกสารผล “ร” 1/2569';font-size:13.5px}}
 nav.menu a:hover,nav.menu a.active{background:rgba(255,255,255,.14);color:#fff}
 
 /* hero */
@@ -210,20 +213,20 @@ footer b{color:#fff}
 <div id="progress"></div>
 <header class="top">
   <div class="wrap">
-    <img src="assets/logo.png" alt="ตราโรงเรียนพรตพิทยพยัต">
+    <img src="logo.png" alt="ตราโรงเรียนพรตพิทยพยัต">
     <div class="brand">ส่งเอกสารผลการเรียน “ร” 1/2569<span>กลุ่มงานวัดผลและประเมินผล · โรงเรียนพรตพิทยพยัต</span></div>
     <nav class="menu" id="menu">
       <a href="#overview">ภาพรวม</a>
-      <a href="#calendar">ปฏิทิน</a>
+      <a class="opt" href="#calendar">ปฏิทิน</a>
       <a href="#docs">เอกสาร 3 ชุด</a>
-      <a href="#pack">การจัดชุด</a>
-      <a href="#sign">จุดลงนาม</a>
+      <a class="opt2" href="#pack">การจัดชุด</a>
+      <a class="opt2" href="#sign">จุดลงนาม</a>
       <a href="#video">วิดีโอ</a>
       <a href="#quick">ฉบับย่อ</a>
       <a href="#guides">คู่มือ</a>
-      <a href="#cases">กรณีพิเศษ</a>
-      <a href="#check">เช็กลิสต์</a>
-      <a href="#faq">คำถาม</a>
+      <a class="opt" href="#cases">กรณีพิเศษ</a>
+      <a class="opt2" href="#check">เช็กลิสต์</a>
+      <a class="opt" href="#faq">คำถาม</a>
       <a href="#download">ดาวน์โหลด</a>
     </nav>
   </div>
@@ -347,11 +350,11 @@ footer b{color:#fff}
           <div class="note">ปีนี้ <b>ยกเลิกการประทับตรา</b>ผู้ตรวจทาน เปลี่ยนเป็นให้ผู้ตรวจลงลายมือชื่อในช่องที่ระบบพิมพ์มาให้แทน</div>
         </div>
         <div>
-          <div class="shot" data-full="assets/sample-pp5-cover.jpg" data-cap="ตัวอย่างปก ปพ.5 (ส่วนล่างคือช่องลงนาม 5 ตำแหน่ง)"><img src="assets/sample-pp5-cover.jpg" alt="ตัวอย่างปก ปพ.5"></div>
+          <div class="shot" data-full="sample-pp5-cover.jpg" data-cap="ตัวอย่างปก ปพ.5 (ส่วนล่างคือช่องลงนาม 5 ตำแหน่ง)"><img src="sample-pp5-cover.jpg" alt="ตัวอย่างปก ปพ.5"></div>
           <div class="cap">ตัวอย่างปก ปพ.5 จากระบบ Prot CARE</div>
           <div class="pill-row">
-            <button class="btn sm" data-full="assets/sample-pp5-2.jpg" data-cap="ตัวอย่าง ปพ5-2 ข้อมูลการบันทึกคะแนนปลายภาคเรียน (เบลอชื่อนักเรียน)">ดูตัวอย่าง ปพ5-2</button>
-            <button class="btn sm" data-full="assets/sample-pp5-reading.jpg" data-cap="ตัวอย่าง ปพ5-2 อ่านคิดวิเคราะห์ (เบลอชื่อนักเรียน)">ดูตัวอย่างอ่านคิดวิเคราะห์</button>
+            <button class="btn sm" data-full="sample-pp5-2.jpg" data-cap="ตัวอย่าง ปพ5-2 ข้อมูลการบันทึกคะแนนปลายภาคเรียน (เบลอชื่อนักเรียน)">ดูตัวอย่าง ปพ5-2</button>
+            <button class="btn sm" data-full="sample-pp5-reading.jpg" data-cap="ตัวอย่าง ปพ5-2 อ่านคิดวิเคราะห์ (เบลอชื่อนักเรียน)">ดูตัวอย่างอ่านคิดวิเคราะห์</button>
           </div>
         </div>
       </div>
@@ -375,7 +378,7 @@ footer b{color:#fff}
           <div class="warn"><b>จุดที่ผิดพลาดบ่อยที่สุด:</b> หากช่องคะแนนใดว่างหรือเป็น 0 เพราะนักเรียนไม่ได้ส่งงานหรือไม่ได้สอบ ผลการเรียนของนักเรียนคนนั้นต้องเป็น <b>“ร”</b> เท่านั้น จะตัดเกรดเป็น 0 ไม่ได้</div>
         </div>
         <div>
-          <div class="shot" data-full="assets/guide-download-wch20.jpg" data-cap="วิธีดาวน์โหลดฟอร์ม วช-20 จากเว็บไซต์โรงเรียน"><img src="assets/guide-download-wch20.jpg" alt="วิธีดาวน์โหลดฟอร์ม วช-20"></div>
+          <div class="shot" data-full="guide-download-wch20.jpg" data-cap="วิธีดาวน์โหลดฟอร์ม วช-20 จากเว็บไซต์โรงเรียน"><img src="guide-download-wch20.jpg" alt="วิธีดาวน์โหลดฟอร์ม วช-20"></div>
           <div class="cap">ขั้นตอนดาวน์โหลดฟอร์ม วช-20 จาก www.prot.ac.th</div>
         </div>
       </div>
@@ -399,9 +402,9 @@ footer b{color:#fff}
           <div class="ok">ไฟล์ฉบับปรับปรุงจะแจ้งเตือนเป็นสีแดงเมื่อกรอกรหัสนักเรียนไม่ถูกต้อง สีเหลืองเมื่อยังไม่เลือกสาเหตุ และเว้นช่องชื่อรายวิชาไว้ให้พิมพ์เองเมื่อรหัสวิชานั้นใช้ใน 2 หลักสูตร</div>
         </div>
         <div>
-          <div class="shot" data-full="assets/readme-sample.jpg" data-cap="ภาพสรุปขั้นตอน (อ่านก่อนส่ง) ที่อยู่ในทุกโฟลเดอร์กลุ่มสาระฯ ใน Google Drive"><img src="assets/readme-sample.jpg" alt="ภาพสรุปขั้นตอนในโฟลเดอร์ Drive"></div>
+          <div class="shot" data-full="readme-sample.jpg" data-cap="ภาพสรุปขั้นตอน (อ่านก่อนส่ง) ที่อยู่ในทุกโฟลเดอร์กลุ่มสาระฯ ใน Google Drive"><img src="readme-sample.jpg" alt="ภาพสรุปขั้นตอนในโฟลเดอร์ Drive"></div>
           <div class="cap">ภาพ “อ่านก่อนส่ง” ในโฟลเดอร์ส่งไฟล์ของแต่ละกลุ่มสาระฯ</div>
-          <div class="pill-row"><a class="btn sm" href="assets/form-ror-1-2569.xlsx">ดาวน์โหลดไฟล์ต้นฉบับ</a></div>
+          <div class="pill-row"><a class="btn sm" href="form-ror-1-2569.xlsx">ดาวน์โหลดไฟล์ต้นฉบับ</a></div>
         </div>
       </div>
     </div>
@@ -495,7 +498,7 @@ footer b{color:#fff}
     <p class="lead">คลิกเวลาในรายการเพื่อข้ามไปยังช่วงนั้นของวิดีโอ</p>
     <div class="grid g2">
       <div class="vid">
-        <video id="v1" controls preload="metadata" poster="assets/poster-print-pp5.jpg" src="assets/video-print-pp5.mp4"></video>
+        <video id="v1" controls preload="metadata" poster="poster-print-pp5.jpg" src="video-print-pp5.mp4"></video>
         <div class="body">
           <h3>การพิมพ์ ปพ.5 จากระบบ Prot CARE</h3>
           <p class="small">ความยาว 3 นาที 8 วินาที · บันทึกหน้าจอวันที่ 18 กันยายน 2569</p>
@@ -511,7 +514,7 @@ footer b{color:#fff}
         </div>
       </div>
       <div class="vid">
-        <video id="v2" controls preload="metadata" poster="assets/poster-download-form.jpg" src="assets/video-download-form.mp4"></video>
+        <video id="v2" controls preload="metadata" poster="poster-download-form.jpg" src="video-download-form.mp4"></video>
         <div class="body">
           <h3>การดาวน์โหลดไฟล์ร่องรอยคะแนน (ฟอร์ม วช-20)</h3>
           <p class="small">ความยาว 28 วินาที · บันทึกหน้าจอวันที่ 18 กันยายน 2569</p>
@@ -536,11 +539,11 @@ footer b{color:#fff}
     <h2>สรุปสั้นใน 5 ภาพ</h2>
     <p class="lead">ชุดภาพเดียวกับที่แจ้งใน Group LINE ครูพรตฯ คลิกที่ภาพเพื่อเปิดดูขนาดเต็ม หรือบันทึกไว้ดูในโทรศัพท์</p>
     <div class="gallery">
-      <div class="gitem" data-full="assets/info-1.png" data-cap="ภาพที่ 1 ภาพรวมกระบวนการส่งเอกสารผลการเรียน"><div class="thumb"><img src="assets/info-1.png" alt=""></div><div class="body"><h4>1 · ภาพรวมกระบวนการ</h4><p>เอกสาร 3 ชุด ลำดับการส่งและตรวจ กำหนดเวลา</p></div></div>
-      <div class="gitem" data-full="assets/info-2.png" data-cap="ภาพที่ 2 ปพ.5 จากระบบ Prot CARE"><div class="thumb"><img src="assets/info-2.png" alt=""></div><div class="body"><h4>2 · ปพ.5 จากระบบ Prot CARE</h4><p>พิมพ์ 3 ส่วน แยกรายห้อง จุดลงนาม และช่องที่ต้องเว้นว่าง</p></div></div>
-      <div class="gitem" data-full="assets/info-3.png" data-cap="ภาพที่ 3 ร่องรอยคะแนน (ฟอร์ม วช-20)"><div class="thumb"><img src="assets/info-3.png" alt=""></div><div class="body"><h4>3 · ร่องรอยคะแนน (ฟอร์ม วช-20)</h4><p>ดาวน์โหลด กรอกครบ แก้ชื่อผู้ลงนาม พิมพ์เฉพาะห้องที่สอน</p></div></div>
-      <div class="gitem" data-full="assets/info-4.png" data-cap="ภาพที่ 4 แบบขออนุมัติผลการเรียน “ร”"><div class="thumb"><img src="assets/info-4.png" alt=""></div><div class="body"><h4>4 · แบบขออนุมัติผลการเรียน “ร”</h4><p>กรอกไฟล์ Excel ลงนาม 2 ฝ่าย อัปโหลดเข้าโฟลเดอร์กลุ่มสาระฯ</p></div></div>
-      <div class="gitem" data-full="assets/info-5.png" data-cap="ภาพที่ 5 สรุปและข้อควรระวัง"><div class="thumb"><img src="assets/info-5.png" alt=""></div><div class="body"><h4>5 · สรุปและข้อควรระวัง</h4><p>เช็กลิสต์ 6 ข้อ และข้อควรระวังก่อนส่ง</p></div></div>
+      <div class="gitem" data-full="info-1.png" data-cap="ภาพที่ 1 ภาพรวมกระบวนการส่งเอกสารผลการเรียน"><div class="thumb"><img src="info-1.png" alt=""></div><div class="body"><h4>1 · ภาพรวมกระบวนการ</h4><p>เอกสาร 3 ชุด ลำดับการส่งและตรวจ กำหนดเวลา</p></div></div>
+      <div class="gitem" data-full="info-2.png" data-cap="ภาพที่ 2 ปพ.5 จากระบบ Prot CARE"><div class="thumb"><img src="info-2.png" alt=""></div><div class="body"><h4>2 · ปพ.5 จากระบบ Prot CARE</h4><p>พิมพ์ 3 ส่วน แยกรายห้อง จุดลงนาม และช่องที่ต้องเว้นว่าง</p></div></div>
+      <div class="gitem" data-full="info-3.png" data-cap="ภาพที่ 3 ร่องรอยคะแนน (ฟอร์ม วช-20)"><div class="thumb"><img src="info-3.png" alt=""></div><div class="body"><h4>3 · ร่องรอยคะแนน (ฟอร์ม วช-20)</h4><p>ดาวน์โหลด กรอกครบ แก้ชื่อผู้ลงนาม พิมพ์เฉพาะห้องที่สอน</p></div></div>
+      <div class="gitem" data-full="info-4.png" data-cap="ภาพที่ 4 แบบขออนุมัติผลการเรียน “ร”"><div class="thumb"><img src="info-4.png" alt=""></div><div class="body"><h4>4 · แบบขออนุมัติผลการเรียน “ร”</h4><p>กรอกไฟล์ Excel ลงนาม 2 ฝ่าย อัปโหลดเข้าโฟลเดอร์กลุ่มสาระฯ</p></div></div>
+      <div class="gitem" data-full="info-5.png" data-cap="ภาพที่ 5 สรุปและข้อควรระวัง"><div class="thumb"><img src="info-5.png" alt=""></div><div class="body"><h4>5 · สรุปและข้อควรระวัง</h4><p>เช็กลิสต์ 6 ข้อ และข้อควรระวังก่อนส่ง</p></div></div>
     </div>
   </div>
 </section>
@@ -551,12 +554,12 @@ footer b{color:#fff}
     <h2>ภาพคำแนะนำที่เกี่ยวข้อง</h2>
     <p class="lead">คลิกที่ภาพเพื่อเปิดดูขนาดเต็ม</p>
     <div class="gallery">
-      <div class="gitem" data-full="assets/guide-download-wch20.jpg" data-cap="วิธีดาวน์โหลดฟอร์ม วช-20 (เอกสารร่องรอย ปพ.5)"><div class="thumb"><img src="assets/guide-download-wch20.jpg" alt=""></div><div class="body"><h4>วิธีดาวน์โหลดฟอร์ม วช-20</h4><p>5 ขั้นตอนจากเว็บไซต์โรงเรียนถึง Google Drive</p></div></div>
-      <div class="gitem" data-full="assets/guide-edit-signer.jpg" data-cap="แจ้งแก้ไขชื่อผู้ลงนามในฟอร์ม วช-20 เป็น (นายเอกรินทร์ นิรันดร์) ผู้ช่วยผู้อำนวยการกลุ่มบริหารวิชาการ"><div class="thumb"><img src="assets/guide-edit-signer.jpg" alt=""></div><div class="body"><h4>แก้ไขชื่อผู้ลงนามในฟอร์ม วช-20</h4><p>เปลี่ยนเป็น (นายเอกรินทร์ นิรันดร์) ผู้ช่วยผู้อำนวยการกลุ่มบริหารวิชาการ ให้ครบทุกแผ่นงาน</p></div></div>
-      <div class="gitem" data-full="assets/guide-reading-assessment.jpg" data-cap="แนวปฏิบัติการประเมินคุณลักษณะอันพึงประสงค์ และการอ่าน คิดวิเคราะห์ และเขียน"><div class="thumb"><img src="assets/guide-reading-assessment.jpg" alt=""></div><div class="body"><h4>แนวปฏิบัติการประเมินคุณลักษณะ และอ่านคิดวิเคราะห์</h4><p>ตัวชี้วัด ระดับคุณภาพ และความสัมพันธ์กับระดับผลการเรียน</p></div></div>
-      <div class="gitem" data-full="assets/guide-attribute-entry.jpg" data-cap="ขั้นตอนการกรอกคะแนนคุณลักษณะสำหรับนักเรียนที่ไม่ผ่านค่ายพัฒนาคุณลักษณะฯ (วิชากุลบุตร กุลสตรี ศรีพรต)"><div class="thumb"><img src="assets/guide-attribute-entry.jpg" alt=""></div><div class="body"><h4>การกรอกคุณลักษณะในวิชากุลบุตรฯ</h4><p>นักเรียนที่ไม่ผ่านค่ายพัฒนาคุณลักษณะฯ ให้กรอกข้อวินัยเป็น 0</p></div></div>
-      <div class="gitem" data-full="assets/guide-mos.jpg" data-cap="ตรวจสอบรายชื่อนักเรียนที่ติด “มส” และกรอกผลการเรียน (ประกาศ 24 สิงหาคม 2569)"><div class="thumb"><img src="assets/guide-mos.jpg" alt=""></div><div class="body"><h4>รายชื่อนักเรียนติด “มส”</h4><p>ประกาศเดิมที่ครูดำเนินการไปแล้ว ใช้อ้างอิงให้ข้อมูล มส ตรงกัน</p></div></div>
-      <div class="gitem" data-full="assets/guide-student-view-grades.jpg" data-cap="วิธีการตรวจผลการเรียนของนักเรียนผ่าน Application PROT Student Care"><div class="thumb"><img src="assets/guide-student-view-grades.jpg" alt=""></div><div class="body"><h4>นักเรียนดูผลการเรียน</h4><p>ผ่านแอป PROT Student Care หลังโรงเรียนประกาศผล</p></div></div>
+      <div class="gitem" data-full="guide-download-wch20.jpg" data-cap="วิธีดาวน์โหลดฟอร์ม วช-20 (เอกสารร่องรอย ปพ.5)"><div class="thumb"><img src="guide-download-wch20.jpg" alt=""></div><div class="body"><h4>วิธีดาวน์โหลดฟอร์ม วช-20</h4><p>5 ขั้นตอนจากเว็บไซต์โรงเรียนถึง Google Drive</p></div></div>
+      <div class="gitem" data-full="guide-edit-signer.jpg" data-cap="แจ้งแก้ไขชื่อผู้ลงนามในฟอร์ม วช-20 เป็น (นายเอกรินทร์ นิรันดร์) ผู้ช่วยผู้อำนวยการกลุ่มบริหารวิชาการ"><div class="thumb"><img src="guide-edit-signer.jpg" alt=""></div><div class="body"><h4>แก้ไขชื่อผู้ลงนามในฟอร์ม วช-20</h4><p>เปลี่ยนเป็น (นายเอกรินทร์ นิรันดร์) ผู้ช่วยผู้อำนวยการกลุ่มบริหารวิชาการ ให้ครบทุกแผ่นงาน</p></div></div>
+      <div class="gitem" data-full="guide-reading-assessment.jpg" data-cap="แนวปฏิบัติการประเมินคุณลักษณะอันพึงประสงค์ และการอ่าน คิดวิเคราะห์ และเขียน"><div class="thumb"><img src="guide-reading-assessment.jpg" alt=""></div><div class="body"><h4>แนวปฏิบัติการประเมินคุณลักษณะ และอ่านคิดวิเคราะห์</h4><p>ตัวชี้วัด ระดับคุณภาพ และความสัมพันธ์กับระดับผลการเรียน</p></div></div>
+      <div class="gitem" data-full="guide-attribute-entry.jpg" data-cap="ขั้นตอนการกรอกคะแนนคุณลักษณะสำหรับนักเรียนที่ไม่ผ่านค่ายพัฒนาคุณลักษณะฯ (วิชากุลบุตร กุลสตรี ศรีพรต)"><div class="thumb"><img src="guide-attribute-entry.jpg" alt=""></div><div class="body"><h4>การกรอกคุณลักษณะในวิชากุลบุตรฯ</h4><p>นักเรียนที่ไม่ผ่านค่ายพัฒนาคุณลักษณะฯ ให้กรอกข้อวินัยเป็น 0</p></div></div>
+      <div class="gitem" data-full="guide-mos.jpg" data-cap="ตรวจสอบรายชื่อนักเรียนที่ติด “มส” และกรอกผลการเรียน (ประกาศ 24 สิงหาคม 2569)"><div class="thumb"><img src="guide-mos.jpg" alt=""></div><div class="body"><h4>รายชื่อนักเรียนติด “มส”</h4><p>ประกาศเดิมที่ครูดำเนินการไปแล้ว ใช้อ้างอิงให้ข้อมูล มส ตรงกัน</p></div></div>
+      <div class="gitem" data-full="guide-student-view-grades.jpg" data-cap="วิธีการตรวจผลการเรียนของนักเรียนผ่าน Application PROT Student Care"><div class="thumb"><img src="guide-student-view-grades.jpg" alt=""></div><div class="body"><h4>นักเรียนดูผลการเรียน</h4><p>ผ่านแอป PROT Student Care หลังโรงเรียนประกาศผล</p></div></div>
     </div>
   </div>
 </section>
@@ -648,12 +651,12 @@ footer b{color:#fff}
     <span class="eyebrow">ดาวน์โหลดและลิงก์</span>
     <h2>ไฟล์และแหล่งข้อมูล</h2>
     <div class="dl">
-      <a href="assets/form-ror-1-2569.xlsx"><b>แบบขออนุมัติผลการเรียน ร 1-2569 (Excel)</b><span>แบบบันทึกการขออนุมัติผลการเรียน ร ฉบับปรับปรุง (ไฟล์เดียวกับในโฟลเดอร์ 00 ของ Google Drive)</span></a>
-      <a href="assets/summary-process.pdf" target="_blank" rel="noopener"><b>สรุปกระบวนการ (PDF)</b><span>เอกสารสรุปกระบวนการทั้งหมดพร้อมแผนภาพ สำหรับพิมพ์</span></a>
+      <a href="form-ror-1-2569.xlsx"><b>แบบขออนุมัติผลการเรียน ร 1-2569 (Excel)</b><span>แบบบันทึกการขออนุมัติผลการเรียน ร ฉบับปรับปรุง (ไฟล์เดียวกับในโฟลเดอร์ 00 ของ Google Drive)</span></a>
+      <a href="summary-process.pdf" target="_blank" rel="noopener"><b>สรุปกระบวนการ (PDF)</b><span>เอกสารสรุปกระบวนการทั้งหมดพร้อมแผนภาพ สำหรับพิมพ์</span></a>
       <a href="https://drive.google.com/drive/folders/1YjTWgw-1pKdVM9eKn27uM-G7Rf2MUWYk" target="_blank" rel="noopener"><b>โฟลเดอร์ส่งไฟล์แบบ ร (Google Drive)</b><span>แยก 9 โฟลเดอร์ตามกลุ่มสาระฯ เลือกโฟลเดอร์ของท่าน · โฟลเดอร์ 00 มีแบบฟอร์ม Excel และภาพแจ้งครู 5 ภาพให้ดาวน์โหลด</span></a>
       <a href="https://drive.google.com/drive/folders/1-6Amd8irTYF_eSnc_OWU_VtIYHs91JJg" target="_blank" rel="noopener"><b>โฟลเดอร์ฟอร์ม วช-20 (Google Drive)</b><span>ไฟล์ร่องรอยคะแนน ม.1 – ม.6 1-2569</span></a>
       <a href="https://www.prot.ac.th" target="_blank" rel="noopener"><b>เว็บไซต์โรงเรียน</b><span>เมนูดาวน์โหลดเอกสาร กลุ่มงานบริหารวิชาการ</span></a>
-      <a href="assets/sample-pp5-cover.jpg" target="_blank" rel="noopener"><b>ตัวอย่างปก ปพ.5</b><span>ภาพตัวอย่างจากระบบ Prot CARE</span></a>
+      <a href="sample-pp5-cover.jpg" target="_blank" rel="noopener"><b>ตัวอย่างปก ปพ.5</b><span>ภาพตัวอย่างจากระบบ Prot CARE</span></a>
     </div>
     <div class="note" style="margin-top:22px"><b>ติดต่อสอบถาม</b> กลุ่มงานวัดผลและประเมินผล กลุ่มบริหารวิชาการ ห้องสำนักงานวิชาการ อาคาร 1 · เรื่องคุณลักษณะอันพึงประสงค์ ติดต่อครูสิรินุช สุ่นขัน กลุ่มงานกิจการนักเรียน</div>
   </div>
